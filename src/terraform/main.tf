@@ -1,3 +1,5 @@
+
+
 # We strongly recommend using the required_providers block to set the
 # Azure Provider source and version being used
 terraform {
@@ -9,13 +11,13 @@ terraform {
   }
 }
 
-   backend "azurerm" {
-    resource_group_name  = "RG-BPINFRA-DEV"
-    storage_account_name = "sabpstate"
-    container_name       = "tfstate"
-    key                  = "staging.terraform.tfstate"
+  # backend "azurerm"{
+  #  resource_group_name  = "RG-BPINFRA-DEV"
+  #  storage_account_name = "sabpstate"
+  #  container_name       = "tfstate"
+  #  key                  = "staging.terraform.tfstate"
    
-  }
+  #}
   
 
 # CONFIGURE MICROSOFT AZURE PROVIDER 
