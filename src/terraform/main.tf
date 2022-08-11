@@ -33,10 +33,10 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
 name = "RG_BPINFRADEV_DEV"
 location = "West Europe"
-tags = {
-   "env": "terraform"
-   "project": "labterraform"
-   "Demanda": "DMD001"
+#tags = {
+#   "env": "terraform"
+#   "project": "labterraform"
+#   "Demanda": "DMD001"
 
 }
-}
+
