@@ -12,6 +12,12 @@ terraform {
 }
 
   # backend "azurerm"{
+
+    provider "azurerm" {
+      features {}
+      }
+      
+    
   #  resource_group_name  = "RG-BPINFRA-DEV"
   #  storage_account_name = "sabpstate"
   #  container_name       = "tfstate"
