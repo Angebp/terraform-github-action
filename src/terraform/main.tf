@@ -12,12 +12,7 @@ terraform {
 }
 
   # backend "azurerm"{
-
-    provider "azurerm" {
-      features {}
-      }
-      
-    
+         
   #  resource_group_name  = "RG-BPINFRA-DEV"
   #  storage_account_name = "sabpstate"
   #  container_name       = "tfstate"
@@ -29,10 +24,10 @@ terraform {
 # CONFIGURE MICROSOFT AZURE PROVIDER 
 provider "azurerm" {
     features {
-      #subscription_id = var.subscription_id
-      #client_id       = var.client_id
-      #client_secret   = var.client_secret
-      #tenant_id       = var.tenant_id
+      subscription_id = var.subscription_id
+      client_id       = var.client_id
+      client_secret   = var.client_secret
+      tenant_id       = var.tenant_id
     }  
 }
 
